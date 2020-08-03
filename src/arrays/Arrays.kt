@@ -1,5 +1,6 @@
 package arrays
 
+import javacode.Dummy
 import java.math.BigDecimal
 
 fun main() {
@@ -37,11 +38,19 @@ fun main() {
 
     val mixedArray = arrayOf("hello", 22, BigDecimal(11.5), 'a')
     for (element in mixedArray) {
-        println(element)
+        //println(element)
     }
     println(mixedArray is Array<Any>)
 
-    val myIntArray = arrayOf(3, 4, 5, 6, 7, 8)
+    val myIntArray = intArrayOf(3, 4, 5, 6, 7, 8)
+    Dummy().printNumbers(myIntArray)
 
+    var someOtherArray = IntArray(6)
+    for(number in someOtherArray){
+      //  println(number  ) /0 0 0 0 0 0 0
+    }
+
+    //Convert to int array
+    Dummy().printNumbers(evenNumbers.toIntArray())
 
 }
