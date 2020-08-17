@@ -40,17 +40,28 @@ fun main() {
     for (element in mixedArray) {
         //println(element)
     }
-    println(mixedArray is Array<Any>)
+    //println(mixedArray is Array<Any>)
 
     val myIntArray = intArrayOf(3, 4, 5, 6, 7, 8)
     Dummy().printNumbers(myIntArray)
 
     var someOtherArray = IntArray(6)
-    for(number in someOtherArray){
-      //  println(number  ) /0 0 0 0 0 0 0
+    for (number in someOtherArray) {
+         //println(number  ) /0 0 0 0 0 0 0
     }
 
     //Convert to int array
-    Dummy().printNumbers(evenNumbers.toIntArray())
+    //Dummy().printNumbers(evenNumbers.toIntArray())
+
+    val str: String? = "Hello"
+
+    val value = str ?: "This is default"
+    println(value)
+
+    //Declare nullable string
+    val someString: String? = null
+    //val someString1: String!! = someString
+
+
 
 }
